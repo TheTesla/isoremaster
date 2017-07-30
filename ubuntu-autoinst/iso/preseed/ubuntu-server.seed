@@ -23,6 +23,13 @@ d-i keyboard-configuration/xkb-keymap select de
 #d-i keyboard-configuration/xkb-keymap select us(dvorak)
 # d-i keyboard-configuration/toggle select No toggling
 
+# Continue the installation in the selected language?
+#d-i localechooser/translation/warn-light boolean false
+d-i localechooser/translation/warn-light boolean true
+#d-i localechooser/translation/warn-severe boolean false
+d-i localechooser/translation/warn-severe boolean true
+
+
 ### Network configuration
 # Disable network configuration entirely. This is useful for cdrom
 # installations on non-networked devices where the network questions,
